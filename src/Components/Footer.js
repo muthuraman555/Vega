@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import logo from "./Asset/Image/vega_logo.png"
 
 const Footer = () => {
     return (
@@ -7,8 +8,17 @@ const Footer = () => {
                 <div className='row first_footer'>
                     <div className='col-md-8 col-lg-6'>
                         <div className='footer_title'>
-                            <h2>VEGA</h2>
-                            <p>Create a react application First, we have to create a simple react application using the create-react-app npm package.Install bootstrap package Here, we will use the bootstrap npm package to import bootstrap in react application</p>
+                            <img src={logo} alt="logo"></img>
+                            <p>
+                                If you're looking for top-notch quality
+                                assurance, you've come to the right
+                                place. We take pride in our work and
+                                stand behind everything we do. So if
+                                you're ever unhappy with something,
+                                just let us know and we'll make it right.
+                                You can rest easy knowing that you're in
+                                good hands with us
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -20,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className='row thred_footer'>
                     <div className='col-md-6'>
-                    <h2 className='mb-3 text-white'>Bonus Number.</h2>
+                        <h2 className='mb-3 text-white'>Bonus Number.</h2>
                         <div className='last_footer'>
                             <div className='first_box_foot'>
                                 <h2>54</h2>

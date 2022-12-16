@@ -10,7 +10,9 @@ const Banner = () => {
       <div className='container'>
         <div className='title'>
           <h2>CONSTRUCTION COMPANY.</h2>
-          <i>"Create a react application First, we have to create a simple react application using the create-react-app application using the"</i>
+          <i>"   Vega Construction Pty Ltd is established with the
+                commitment to provide high-quality construction
+                services in a timely manner at affordable prices."</i>
           <br />
           <br />
           <Link to="#">Learn More</Link>

@@ -1,25 +1,22 @@
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import axios from "axios";
-import Lottie from "lottie-react";
-import spinner from "./Asset/spinner.json"
-import { useState, useEffect } from 'react';
+import slider from "./Asset/web.webp";
+import first_img from "./Asset/service_image/1.jpg"
+
 
 
 const Gallery = () => {
 
-  const [gallery, setgallery] = useState([]);
-  const [loading, setloading] = useState(true);
+  // const [gallery, setgallery] = useState([]);
   
-  useEffect(() => {
-      const customer = async () => {
-        const result = await axios.get(`http://192.168.100.156:5005/api/gallery`)
-        setgallery(result.data.gallery)
-        setloading(false)
-      }
-      customer()
-    }, [])
+  // useEffect(() => {
+  //     const customer = async () => {
+  //       const result = await axios.get(`http://192.168.100.156:5005/api/gallery`)
+  //       setgallery(result.data.gallery)
+  //     }
+  //     customer()
+  //   }, [])
 
   return (
     <div className='gallery' id="gallery">
@@ -36,17 +33,10 @@ const Gallery = () => {
           autoPlay
           stagePadding={300}
         >
-        {
-          loading ? 
-                        (
-                            <Lottie animationData={spinner} loop={true} />
-                        ) :
-          gallery.map(item =>{
-            return(
-              <div><img className="img" src={item} alt="images" /></div>
-            )
-          })
-        }
+        <>
+        <div><img className="img" src={slider} alt="images" /></div>
+        </>
+
         </OwlCarousel>
       </div>
 
@@ -59,17 +49,7 @@ const Gallery = () => {
           autoPlay
           stagePadding={30}
         >
-           {
-          loading ? 
-                        (
-                            <Lottie animationData={spinner} loop={true} />
-                        ) :
-          gallery.map(item =>{
-            return(
-              <div><img className="img" src={item} alt="images" /></div>
-            )
-          })
-        }
+       <div><img className="img" src={slider} alt="images" /></div>
         </OwlCarousel>
       </div>
 
@@ -82,17 +62,8 @@ const Gallery = () => {
           autoPlay
           stagePadding={30}
         >
-          {
-          loading ? 
-                        (
-                            <Lottie animationData={spinner} loop={true} />
-                        ) :
-          gallery.map(item =>{
-            return(
-              <div><img className="img" src={item} alt="images" /></div>
-            )
-          })
-        }
+         <div><img className="img" src={slider} alt="images" /></div>
+
         </OwlCarousel>
       </div>
 

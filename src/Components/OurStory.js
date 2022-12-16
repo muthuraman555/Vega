@@ -7,15 +7,26 @@ const OurStory = () => {
             <div className='container'>
                 <div className='row story'>
                     <div className='col-md-12 col-lg-6'>
-                    <div className='story_content'>
-                    <h2>OUR STORY</h2>
-                        <p>
-                            Each horizontal bar consists of various cards. The first bar includes three cards with the same titles and contents. Clicking the second bar will slide to present the next set of cards. The same goes for the third one. If you want, you can also add arrow icons or customize the design as a slideshow. Furthermore, the design is fully responsive. Simply resize the window, and then you can see four horizontal bars with cards separated properly.
-                        </p>
-                    </div>
+                        <div className='story_content'>
+                            <h2>OUR STORY</h2>
+                            <p>
+                                Asad, the founder of Vega Construction,
+                                is a civil engineer with many years of
+                                experience in the construction industry.
+                                He started the company with the goal
+                                of providing quality construction
+                                services to his community. He has been
+                                involved in many large projects and has
+                                gained a vast amount of knowledge in
+                                the field. Asad is very passionate about
+                                his work and takes great pride in
+                                ensuring that each project is completed
+                                to the highest standard.
+                            </p>
+                        </div>
                     </div>
                     <div className='col-md-12 col-lg-5'>
-                    <img src={twele} alt="service"></img>
+                        <img src={twele} alt="service"></img>
                     </div>
                 </div>
             </div>
