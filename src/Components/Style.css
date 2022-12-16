@@ -602,7 +602,7 @@ main {
   button:disabled {
     opacity: 0.35;
   }
-  ul li{
+  .our_service ul li{
     list-style-type:circle;
   }
 
