@@ -1,5 +1,5 @@
 import React from 'react';
-import twele from "./Asset/service_image/12.jpg"
+import twele from "./Asset/service_image/12.png"
 
 const OurStory = () => {
     return (

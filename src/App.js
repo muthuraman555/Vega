@@ -7,6 +7,7 @@ import OurService from "./Components/Our_service";
 import Project from "./Components/Project";
 import SecondBanner from "./Components/SecondBanner";
 import axios from "axios";
+import Navbar from "./Components/Navbar";
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
 
   return (
     <div className="App">
-      <Banner />
+      <Navbar />
+        <Banner />
       <SecondBanner />
       <Project />
       <OurService />

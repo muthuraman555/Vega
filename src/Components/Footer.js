@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from "./Asset/Image/vega_logo.png";
-import {Link} from  "react-router-dom"
+
 
 const Footer = () => {
+
     return (
         <div className='footer'>
             <div className='container'>
@@ -26,7 +27,7 @@ const Footer = () => {
                 <div className='row second_footer'>
                     <div className='col-md-6'>
                         <p>(C) 2022 All Rights Reserved. Mvp Digital</p>
-                        <Link to="https://www.mvpdigital.com.au/">www.MvpDigital.com.au</Link>
+                        <a href="https://mvpdigital.com.au/" rel='noreferrer' target="_blank">www.MvpDigital.com.au</a>
                     </div>
                 </div>
                 <div className='row thred_footer'>

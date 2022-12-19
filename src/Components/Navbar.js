@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './NavStyle.css';
-import { Link } from "react-scroll";
 import logo from "./Asset/Image/vega_logo_mob.png"
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(false)
@@ -38,33 +38,33 @@ const Navbar = () => {
                 </div>
                 <div className={`nav-elements  ${showNavbar && 'active'}`}>
                     <ul>
-                        <li>
-                        <Link to="Home" spy={true} smooth={true} offset={50} duration={500}>
+                        <li >
+                            <Link to="Home" onClick={handleShowNavbar} >
                             <NavLink to="Home">HOME</NavLink></Link>
                         </li>
                         <li>
-                        <Link to="Cababilities" spy={true} smooth={true} offset={50} duration={500}>
+                            <Link to="Cababilities"  onClick={handleShowNavbar} >
                         <NavLink to="Cababilities">CABABILITIES</NavLink></Link>
                         </li>
                         <li>
-                        <Link to="service" spy={true} smooth={true} offset={50} duration={500}>
+                            <Link to="service"  onClick={handleShowNavbar} >
                             <NavLink to="service">SERVICES</NavLink></Link>
                         </li>
                         <li>
-                        <Link to="gallery" spy={true} smooth={true} offset={50} duration={500}>
+                            <Link to="gallery"  onClick={handleShowNavbar} >
                             <NavLink to="gallery">GALLERY</NavLink></Link>
                         </li>
                         <li>
-                        <Link to="story" spy={true} smooth={true} offset={50} duration={500}>
+                            <Link to="story"   onClick={handleShowNavbar}>
                             <NavLink to="story">OUR STORY</NavLink></Link>
                         </li>
                         <li>
-                        <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
+                            <Link to="contact" onClick={handleShowNavbar} >
                             <NavLink to="contact">CONTACT US</NavLink></Link>
                         </li>
                     </ul>
                 </div>
-            </div>
+                </div>
         </nav>
     )
 }

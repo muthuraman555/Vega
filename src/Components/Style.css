@@ -10,7 +10,7 @@ main {
     overflow: hidden;
 }
 
-.banner {
+.banner{
     width: 100%;
     height: 100%;
     background-image: url(./Asset/Image/banner_first.jpg);
@@ -18,8 +18,8 @@ main {
     background-position: center;
     background-size: cover;
     position: relative;
-    padding-bottom: 50px;
-    z-index: 0;
+     z-index: 0;
+    padding: 190px 0px 59px;
 }
 
 .center_banner {
@@ -39,6 +39,7 @@ main {
 .service_bottom{
     display: block;
     display: flex;
+    justify-content:center;
 }
 
 .banner::before {
@@ -111,9 +112,9 @@ main {
     align-items: center;
 }
 
-.second_banner .title {
+/* .second_banner .title {
     padding: 50px;
-}
+} */
 
 .second_banner .title i {
     font-size: 25px;
@@ -147,7 +148,13 @@ main {
     background-color: #000;
     width: 100%;
     height: 100%;
-    padding: 50px 0px 78px;
+    padding: 50px 0px 0px;
+}
+.service_bottoms{
+        background-color: #000;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 70px;
 }
 
 .our_service h2 {
@@ -163,10 +170,14 @@ main {
 .service_content {
     color: #ffff;
 }
+.service_content p {
+    font-size: 15px;
+    letter-spacing: 0.2px;
+}
 
 .service_title h5 {
     color: #fff;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 500;
 }
 
@@ -207,10 +218,23 @@ main {
     transform: translateY(-44px);
 }
 
-.right_img {
+.right_img, .service_right_img {
     z-index: 1;
     position: relative;
 }
+
+.service_right_img::before{
+        position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 20px solid #3a3838;
+    top: 0px;
+    right: -65px;
+    z-index: -1;
+    transform: translateY(-44px);
+}
+
 
 .right_img:before {
     position: absolute;
@@ -290,8 +314,8 @@ main {
 }
 
 .story_content p {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 21px;
+    font-weight: 400;
 }
 
 .contact {
@@ -305,9 +329,9 @@ main {
     font-weight: 700;
 }
 
-.service_bottom {
+/* .service_bottom {
     padding-top: 80px;
-}
+} */
 
 .our-story {
     padding-top: 50px;
@@ -346,6 +370,12 @@ main {
     line-height: 56px;
     font-weight: 600;
 }
+.our_service .container, .project_stage .container, .center_banner .container, .banner .container, .footer .container, .navbar .container{
+    max-width: 1345px;
+}
+/* .service_content p {
+    font-size: 14px;
+} */
 
 .forms_content p {
     line-height: 50px;
@@ -501,9 +531,6 @@ main {
 
 }
 
-.footer .container {
-    max-width: 1235px;
-}
 
 .project_error {
     opacity: 0.3;
@@ -521,7 +548,7 @@ main {
 }
 .right_img img, .left_img img{
     width: 500px;
-    height: 300px;
+    height: 280px;
 }
 
 
@@ -619,13 +646,17 @@ main {
     opacity: 0.35;
   }
   .our_service ul li{
-    list-style-type:circle;
+      list-style-type: disc;
+    font-size: 13px;
   }
 
 @media (max-width: 769px) {
     .title {
         max-width: 100%;
         padding: 50px 2px 31px;
+    }
+    .banner {
+    padding: 29px 0px 30px;
     }
     .mobile_service{
         display: block;
@@ -682,7 +713,8 @@ main {
     }
 
     .left_img::before,
-    .right_img:before {
+    .right_img:before,
+    .service_right_img::before {
         display: none;
     }
 
@@ -698,7 +730,7 @@ main {
     .right_forms,
     .left_forms,
     .maps_box {
-        padding: 14px;
+            padding: 37px;
     }
 
     .forms {
@@ -783,6 +815,9 @@ main {
     }
     .left_img::before {
         left: -35px;
+    }
+    .banner{
+            padding: 61px 0px 59px
     }
     .social_thired {
         align-items: center;

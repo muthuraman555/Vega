@@ -6,13 +6,13 @@ import error from "./Asset/Image/cancel.png"
 
 const Project = () => {
     return (
-        <div className='container'>
             <div className='project_stage'>
+            <div className='container'>
                 <h2>PROJECT STAGE</h2>
                 <div className='row'>
-                    <div className='project_small col-12 col-md-6 col-lg-3'>
+                    <div className='project_small col-sm-6 col-md-6 col-lg-6 col-xl-3 '>
                         <div className='row'>
-                            <div className= 'col-4 col-md-3'>
+                            <div className= 'col-3 col-md-3'>
                             <img src={Tick} alt="tick"></img>
                             </div>
                             <div className='col-8 col-md-7'>
@@ -24,9 +24,9 @@ const Project = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='project_small col-12 col-md-6 col-lg-3'>
+                    <div className='project_small  col-sm-6 col-md-6 col-lg-6 col-xl-3 '>
                         <div className='row'>
-                            <div className='col-4 col-md-3'>
+                            <div className='col-3 col-md-3'>
                             <img src={Tick} alt="tick"></img>
                             </div>
                             <div className='col-8 col-md-7'>
@@ -38,9 +38,9 @@ const Project = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='project_small col-12 col-md-6 col-lg-3'>
+                    <div className='project_small  col-sm-6 col-md-6 col-lg-6 col-xl-3 '>
                         <div className='row project_process'>
-                            <div className='col-4 col-md-3'>
+                            <div className='col-3 col-md-3'>
                             <img src={Time} alt="tick"></img>
                             </div>
                             <div className='col-8 col-md-7'>
@@ -52,9 +52,9 @@ const Project = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='project_small col-12 col-md-6 col-lg-3'>
+                    <div className='project_small  col-sm-6 col-md-6 col-lg-6 col-xl-3 '>
                         <div className='row project_error'>
-                            <div className='col-4 col-md-3'>
+                            <div className='col-3 col-md-3'>
                             <img src={error} alt="tick"></img>
                             </div>
                             <div className='col-8 col-md-7'>

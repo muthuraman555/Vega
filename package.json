@@ -19,6 +19,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-google-maps": "^9.4.5",
+    "react-linkify": "^1.0.0-alpha",
     "react-owl-carousel": "^2.3.3",
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
