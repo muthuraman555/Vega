@@ -202,7 +202,7 @@ main {
     height: 100%;
     border: 20px solid #3a3838;
     top: 0px;
-    left: -65px;
+      left: -118px;
     z-index: -1;
     transform: translateY(-44px);
 }
@@ -354,7 +354,6 @@ main {
 
 .social_media {
     background-color: #1a1919d6;
-    opacity: 0.;
     width: 100%;
     padding: 50px 50px 20px;
     color: #fff;
@@ -382,7 +381,7 @@ main {
 }
 
 .social_child a {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 /* .social_icons_back {
@@ -402,7 +401,6 @@ main {
 
 .left_forms {
     background-color: #343434d6;
-    opacity: 0.;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -438,13 +436,27 @@ main {
 }
 
 .footer {
-    background-image: url(./Asset/Image/footer.png);
+    background-image: url(./Asset/Image/second_banner.jpg);
     width: 100%;
     height: 100%;
     padding: 50px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+.footer::before{
+     content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(9 9 9 / 77%);
+
 }
 
 .footer_title {
@@ -506,6 +518,10 @@ main {
 }
 .Tab_view{
     display: none;
+}
+.right_img img, .left_img img{
+    width: 500px;
+    height: 300px;
 }
 
 
