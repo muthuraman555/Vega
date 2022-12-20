@@ -154,7 +154,7 @@ main {
         background-color: #000;
     width: 100%;
     height: 100%;
-    padding-bottom: 70px;
+       padding-bottom: 70px;
 }
 
 .our_service h2 {
@@ -246,6 +246,9 @@ main {
     right: -65px;
     z-index: -1;
     transform: translateY(-44px);
+}
+.service_second_main{
+        padding: 57px 50px;
 }
 
 .service_second_main .service_title {
@@ -661,6 +664,9 @@ main {
     .mobile_service{
         display: block;
     }
+    .service_title h5 {
+    text-align: left;
+}
 
     .title h2 {
         font-size: 35px;
@@ -720,7 +726,11 @@ main {
 
     .service_second_main {
         padding: 25px;
+        flex-direction: column-reverse;
     }
+    .service_content p {
+    padding-top: 20px;
+}
 
     .footer,
     .story {
@@ -807,6 +817,12 @@ main {
         align-items: center;
         justify-content: center;
     }
+    .service_bottoms {
+    padding-bottom: 35px;
+}
+    .service_bottoms .owl-item{
+        height: 220px;
+    }
 }
 
 @media (min-width:700px) and (max-width: 1200px) {
@@ -818,6 +834,17 @@ main {
     }
     .banner{
             padding: 61px 0px 59px
+    }
+    .service_bottoms .owl-item{
+        height: 350px;
+    }
+    .service_bottom{
+        display: none;
+        padding-bottom: 70px;
+        padding-top: 50px;
+    }
+       .mobile_service{
+        display: block;
     }
     .social_thired {
         align-items: center;

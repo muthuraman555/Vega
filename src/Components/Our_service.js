@@ -64,7 +64,7 @@ const OurService = () => {
                             )
                         })
                     } */}
-                        <div className='col-md-12'>
+                        <div className='col-md-12 col-lg-12'>
                             <div className='row service_main gx-5'>
                                 <div className='col-md-6 left_img'>
                                     <div className='service_title'>

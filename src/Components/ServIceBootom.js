@@ -9,13 +9,13 @@ const ServIceBootom = () => {
    <div className='service_bottoms'>
    <div className='container'>
           <div className='row service_bottom'>
-              <div className=' col-md-3'>
+              <div className='col-md-4 col-lg-3'>
                   <img src={nine} alt="service"></img>
               </div>
-              <div className='col-md-3'>
+                  <div className='col-md-4 col-lg-3'>
                   <img src={ten} alt="service"></img>
               </div>
-              <div className='col-md-3 service_right_img '>
+                  <div className='col-md-4 col-lg-3 service_right_img '>
                   <img src={eleven} alt="service"></img>
               </div>
           </div>
