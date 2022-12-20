@@ -70,6 +70,7 @@ const OurService = () => {
                                     <div className='service_title'>
                                         <h5>Hi-End Residential Construction</h5>
                                         <p>(Apparments,Homes)</p>
+                                        <p>(Coming soon)</p>
                                     </div>
                                     <img src={first_img} alt="service"></img>
                                 </div>

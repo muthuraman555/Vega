@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "./Asset/Image/vega_logo.png";
+import logo from "./Asset/Image/vega_logo_mob.png";
 
 
 const Footer = () => {

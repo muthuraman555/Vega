@@ -75,6 +75,7 @@ main {
 .title h2 {
     font-size: 95px;
     font-weight: 700;
+    color: #d6bb3e;
     padding-bottom: 20px;
 }
 
@@ -160,7 +161,7 @@ main {
 .our_service h2 {
     font-size: 75px;
     font-weight: 700;
-    color: #fff;
+    color: #d6bb3e;
     width: 34%;
 }
 
@@ -327,7 +328,7 @@ main {
 }
 
 .contact h2 {
-    color: #fff;
+    color: #d6bb3e;
     font-size: 55px;
     font-weight: 700;
 }
@@ -504,6 +505,7 @@ main {
 
 .footer_title p {
     font-size: 18px;
+    padding-top: 20px;
 }
 
 .row.first_footer {
