@@ -8,8 +8,26 @@ import Project from "./Components/Project";
 import SecondBanner from "./Components/SecondBanner";
 import axios from "axios";
 import Navbar from "./Components/Navbar";
+import AOS from "aos";
+import { useEffect} from "react";
+// import Loader from "./Components/Loader";
 
 function App() {
+
+  // const [refresh, setrefresh] = useState(false);
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
+  // useEffect(()=>{
+  //   window.location.reload(false)
+  //   const timer = setInterval(() => {
+  //     setrefresh(!refresh)
+  //     return () => clearInterval(timer)
+  //   }, 1000);
+  // }, [])
 
 
   axios.defaults.headers.post['Content-Type'] = 'application/json';
@@ -18,15 +36,16 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
-        <Banner />
-      <SecondBanner />
-      <Project />
-      <OurService />
-      <Gallery />
-      <OurStory />
-      <ContactUs />
-      <Footer />
+
+            <Navbar />
+            <Banner />
+            <SecondBanner />
+            <Project />
+            <OurService />
+            <Gallery />
+            <OurStory />
+            <ContactUs />
+            <Footer />
     </div>
   );
 }

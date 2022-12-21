@@ -9,19 +9,48 @@ main {
 .our_service {
     overflow: hidden;
 }
-
 .banner{
-    width: 100%;
-    height: 100%;
-    background-image: url(./Asset/Image/banner_first.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     position: relative;
-     z-index: 0;
-    padding: 190px 0px 59px;
+
+}
+.dummy_service{
+    width: 100vw;
+    height: 100vh;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x:hidden;
+    
 }
 
+.banners{
+    /* background-image: url(./Asset/Image/banner_first.jpg); */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    position: relative;
+     z-index: 1;
+    /* padding: 190px 0px 59px; */
+}
+.banner_content_child{
+    position: absolute;
+    content: "";
+       top: 30%;
+    left: 12%; 
+    z-index: 3;
+}
+.loader{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
 .center_banner {
     width: 100%;
     background-image: url(./Asset/Image/second_banner.jpg);
@@ -46,7 +75,7 @@ main {
     content: "";
     display: block;
     position: absolute;
-    z-index: -1;
+    z-index: 3;
     width: 100%;
     height: 100%;
     top: 0;
@@ -147,20 +176,22 @@ main {
 
 .our_service {
     background-color: #000;
-    width: 100%;
-    height: 100%;
-    padding: 50px 0px 0px;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 40px;
 }
 .service_bottoms{
-        background-color: #000;
+    background-color: #000;
     width: 100%;
     height: 100%;
-       padding-bottom: 70px;
+    padding-bottom: 70px;
+    padding-top: 90px;
 }
 
 .our_service h2 {
     font-size: 75px;
     font-weight: 700;
+    padding-bottom: 70px;
     color: #d6bb3e;
     width: 34%;
 }
@@ -192,7 +223,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 110px 170px;
+    padding: 40px 170px;
 }
 
 .service_second_main {

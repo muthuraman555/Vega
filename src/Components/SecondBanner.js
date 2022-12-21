@@ -6,9 +6,9 @@ const SecondBanner = () => {
   return (
     <div className='second_banner' id="Cababilities">
       <div className='container'>
-        <div className='center_banner'>
+        <div className='center_banner' >
           <div className='container'>
-            <div className='title '>
+            <div className='title ' data-aos="fade-up">
               <h2>OUR CABABILITIES</h2>
               <i>
                 Vega Construction Pty Ltd is established with the

@@ -46,7 +46,9 @@ const ContactUs = () => {
                                     <div className='container'>
                                         <h2>Get in Touch</h2>
                                         <div className='row social_child'>
-                                            <div className='col-md-6 col-lg-3'>
+                                            <div className='col-md-6 col-lg-3' data-aos="fade-right"
+                                                data-aos-offset="300"
+                                                data-aos-easing="ease-in-sine">
                                                 <div className='row social_thired'>
                                                     <div className='col-md-2 col-lg-1 social_icons_back'>
                                                         <Phone />
@@ -57,7 +59,9 @@ const ContactUs = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className='col-md-6 col-lg-3'>
+                                            <div className='col-md-6 col-lg-3' data-aos="fade-right"
+                                                data-aos-offset="300"
+                                                data-aos-easing="ease-in-sine">
                                                 <div className='row social_thired'>
                                                     <div className=' col-md-2 col-lg-1 social_icons_back'>
                                                         <Mail />
@@ -68,7 +72,9 @@ const ContactUs = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className='col-md-6 col-lg-3'>
+                                            <div className='col-md-6 col-lg-3' data-aos="fade-right"
+                                                data-aos-offset="300"
+                                                data-aos-easing="ease-in-sine">
                                                 <div className='row social_thired'>
                                                     <div className=' col-md-2 col-lg-1 social_icons_back'>
                                                         <LocationMarker />
@@ -81,7 +87,8 @@ const ContactUs = () => {
                                                 </div>
                                             </div>
                                             <div className='offset-lg-4 col-md-6  col-lg-7'>
-                                                <div className='row social '>
+                                                <div className='row social ' data-aos="fade-up"
+                                                    data-aos-anchor-placement="top-bottom">
                                                     <div className='col-2 col-md-3 col-lg-1'>
                                                         <a href="https://www.facebook.com/Vegaconstructionptyltd" rel='noreferrer' target="_blank"> <img src={face} alt="facebook" ></img></a>
                                                     </div>

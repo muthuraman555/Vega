@@ -6,7 +6,8 @@ const Footer = () => {
 
     return (
         <div className='footer'>
-            <div className='container'>
+            <div className='container' data-aos="fade-up"
+                data-aos-anchor-placement="top-center">
                 <div className='row first_footer'>
                     <div className='col-md-8 col-lg-6'>
                         <div className='footer_title'>

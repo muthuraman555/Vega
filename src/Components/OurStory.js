@@ -6,7 +6,8 @@ const OurStory = () => {
         <div className='our-story' id="story">
             <div className='container'>
                 <div className='row story'>
-                    <div className='col-md-12 col-lg-6'>
+                    <div className='col-md-12 col-lg-6' data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">
                         <div className='story_content'>
                             <h2>OUR STORY</h2>
                             <p>
@@ -25,7 +26,9 @@ const OurStory = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='col-md-12 col-lg-5'>
+                    <div className='col-md-12 col-lg-5' data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1000">
                         <img src={twele} alt="service"></img>
                     </div>
                 </div>
